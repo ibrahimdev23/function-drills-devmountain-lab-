@@ -376,23 +376,18 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
    invoked. Use the sample array to test this function.
 */
 
-let numOrdering = function(nums){
-    for (i = 0; i < nums.length; i++){
-      for (j = 1; j < nums[i].length; j++){ 
-      
-
-          if (num[j] > nums[i]){
-            console.log(false )
-          } else {
-            console.log(true)
-          }
-    }
+function order(array){
+  firstNum = array[0]
+  secondNum = array[1]
+  if (secondNum > firstNum){
+    console.log(true)
+  } else {
+    console.log(false)
   }
-
-
+  
 }
 
-numOrdering(sampleArray)
+order(sampleArray)
 ////////////////// PROBLEM 22 ////////////////////
 
 let duck = "cute";
@@ -416,13 +411,13 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-// let globalScope = []
+ let globalScope = [duck,]
 
 // //This array should contain the variable names (as strings) accessible in the bathroom function.
-// let bathroomScope = []
+ let bathroomScope = [rubberDuck, sailorDuck,]
 
 // //This array should contain the variable names (as strings) accessible in the bathtub function.
-// let bathtubScope = []
+let bathtubScope = [nautical,]
 
 // //This array should contain the variable names (as strings) accessible in the pond function.
-// let pondScope = [] // 
+let pondScope = [realDuck] 
